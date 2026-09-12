@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+      // Redirect all 404 routes to index.html and preserve path
+      var path = location.pathname.replace('/ResearcherAgricWebApp', '');
+      var search = location.search;
+      var hash = location.hash;
+
+      if (path && path !== '/index.html' && path !== '/') {
+        var query = (search ? search + '&' : '?') + 'path=' + encodeURIComponent(path);
+        window.location.replace('/ResearcherAgricWebApp/' + query + hash);
+      } else {
+        window.location.replace('/ResearcherAgricWebApp/');
+      }
+    </script>
+</head>
+<body>
+</body>
+</html>
