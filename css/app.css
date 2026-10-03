@@ -104,6 +104,24 @@ code {
     color: #c02d76;
 }
 
+.researcher-user-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+}
+
+.researcher-user-menu {
+    position: absolute;
+    right: 0.75rem;
+    top: 3.25rem;
+    min-width: 230px;
+    z-index: 1001;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.15);
+}
+
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
     color: var(--bs-secondary-color);
     text-align: end;
